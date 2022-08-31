@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    /* box-sizing: border-box; */
+}
+
+body{
+    background-color: blue;
+}
+
+.grid{
+    width: 604px;
+    height: 604px;
+    display: grid;
+    border: white solid 2px;
+    grid-template-columns: repeat(auto-fit, 40px);
+    grid-auto-rows: 40px;
+}
+
+.app{
+    display: grid;
+    grid-template-columns: 644px 1fr;
+    gap: 10px;
+}
+
+.grid > div {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+}
+
+.message{
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    opacity: 85%;
+}
+
+.message h1{
+    color: blue;
+    text-align: center;
+    line-height: 50px;
+}
+
+.scoreboard{
+    margin: 20px;
+    color: white;
+}
+
+.scoreboard > *{
+    margin: 20px;
+}
+
+.spaceship{
+    background-image: url('img/spaceship.png');
+}
+
+.laser{
+    background-image: url('img/projectile.png')
+}
+
+.alien{
+    background-image: url('img/alien.png ');
+}
+
+.hit{
+    background-image: url('img/explosion.png ');
+}
